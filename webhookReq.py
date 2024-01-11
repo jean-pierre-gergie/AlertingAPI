@@ -3,13 +3,6 @@ from fastapi import  Response,Request, HTTPException
 
 
 
-
-
-
-
-
-
-
 app = FastAPI()
 
 @app.post("/")
@@ -38,8 +31,3 @@ async def read_root(request: Request):
 
     return {"message": 'OK'}
 
-if __name__ == "__main__":
-    import uvicorn
-
-
-    uvicorn.run(app, host="0.0.0.0", port=9001)
