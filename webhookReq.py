@@ -27,7 +27,8 @@ async def read_root(request: Request):
 
         return {"message": "Request processed successfully"}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        # raise HTTPException(status_code=500, detail=str(e))
+        pass
 
     return {"message": 'OK'}
 
